@@ -9,7 +9,7 @@ body {
   color: #404040;
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 300;
 }
 
@@ -48,6 +48,7 @@ p {
 
 p span {
   font-weight: 500;
+  font-size: 0.9em;
 }
 
 img {
@@ -188,7 +189,6 @@ h3 { margin: 1em 0 0.5em 0; }
    padding: 5em 0 4em 0;
  }
 
-
 .two, .four, .six {
    width: 50%;
    float: left;
@@ -233,6 +233,10 @@ h3 { margin: 1em 0 0.5em 0; }
   padding: 1.5em 0 4em 0;
   margin-left: 2em;
   margin-right: 2em;
+}
+
+p span {
+  font-size: 1em;
 }
 
 /* ---- Images ---- */
