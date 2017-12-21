@@ -37,18 +37,15 @@ h3 {
   margin-top: 1.5em;
 }
 
-.portfolio-title {
-  text-align: center;
-}
-
 p {
   text-align: center;
   line-height: 1.75;
 }
 
 p span {
-  font-weight: 500;
+  font-weight: 300;
   font-size: 0.9em;
+  color: #ea6868;
 }
 
 img {
@@ -59,7 +56,28 @@ img {
   Base Layout Styles
 ==================================== */
 
+/* ---- Typography---- */
+
+.name {
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.portfolio-title {
+  text-align: center;
+}
+
+.name-footer {
+  font-size: 1.25em;
+  float: left;
+  margin-top: 0;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-weight: 400;
+}
+
 /* ---- Navigation ---- */
+
 .main-header {
   text-align: center;
 }
@@ -80,6 +98,11 @@ img {
   color: #404040;
 }
 
+.main-nav li a:hover,
+.footer-nav li a:hover {
+  color: #ea6868;
+}
+
 .footer-nav li a {
   display: none;
 }
@@ -88,7 +111,8 @@ img {
 
 .main-wrapper {
   background-color: #fff;
-  padding: 3em 0 3em 0;
+  outline: 1px red solid;
+  /* padding: 3em 0 3em 0; */
 }
 
 .col {
@@ -110,7 +134,7 @@ img {
   margin: 0 1em 0 1em;
 }
 
-/* ---- Page Elements ---- */
+/* ---- Other Links ---- */
 
 .top {
   float: right;
@@ -120,10 +144,11 @@ img {
   display: inline-block;
 }
 
-.name-footer {
-  font-size: 0.9em;
-  float: left;
-  margin-top: 0;
+.skills {
+  display: inline-block;
+  color: #ea6868;
+  padding-top: 0.75em;
+  margin-top: 1em;
 }
 
 /* ---- Images ---- */
@@ -155,6 +180,7 @@ p.intro {
   text-align: left;
   margin: 0;
   font-size: 1em;
+  padding-right: 1em;
 }
 
 h3 { margin: 1em 0 0.5em 0; }
@@ -178,11 +204,6 @@ h3 { margin: 1em 0 0.5em 0; }
 .main-wrapper {
    width: 90%;
    margin: 0 auto;
- }
-
-.main-wrapper {
-  width: 100%;
-  padding: 3em 1em 2.5em 1em;
  }
 
 .banner {
@@ -239,6 +260,13 @@ p span {
   font-size: 1em;
 }
 
+/* ---- Other Links ---- */
+
+.skills {
+  padding-top: 0.25em;
+  margin-top: 0.3em;
+}
+
 /* ---- Images ---- */
 
 .profile-pic {
@@ -247,7 +275,7 @@ p span {
   width: 40%;
 }
 
- /* ---- Float clearfix ---- */
+/* ---- Float clearfix ---- */
 
  .clearfix::after {
    content: " ";
@@ -281,9 +309,10 @@ p.intro {
   float: right;
 }
 
-.main-nav li {
-
+.main-nav li:last-child {
+  padding-right: 0;
 }
+
 /* ---- Layout Containers ---- */
 
 .header-wrapper,
@@ -317,6 +346,14 @@ p.intro {
   /* outline: 1px pink solid; */
   margin-right: 0;
   padding: 2em 0.35em 0 0.35em;
+}
+
+/* ---- Other Links ---- */
+
+.skills {
+  border-top: 1px lightgrey solid;
+  padding-top: 1em;
+  margin-top: 2em;
 }
 
 /* ---- Footer ---- */
